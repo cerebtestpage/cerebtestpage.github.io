@@ -25,6 +25,7 @@ body
 
 body
 {
+    font-family: 'Poppins', sans-serif;
     margin:0;
     
 }
@@ -160,6 +161,7 @@ section
 
 .caption 
 {
+    
 	
 	padding: 35px;
 	background-color: white;
@@ -182,7 +184,8 @@ section
 
 .caption b
 {
-	font-size: 30px;
+    
+	font-size: 35px;
 	color: #050403;
 /*	color: #4a4a4a;*/
 	text-shadow: 0 20px rgba(60,184,133,0.20);
