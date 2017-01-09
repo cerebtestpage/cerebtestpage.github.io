@@ -7588,11 +7588,11 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
-.slider {
+/*.slider {
   position: relative;
   height: 400px;
   width: 100%;
-}
+}*/
 
 .slider.fullscreen {
   height: 100%;
