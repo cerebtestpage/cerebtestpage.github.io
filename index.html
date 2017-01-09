@@ -100,178 +100,115 @@ display: none;
 left: 0;
 display:block;
 }
+
+#pager{
+	/* firefox has different center method. this doesn't work for fire fox */
+	/* not in the center*/
+	padding:0px;
+	position:relative;
+	height:50px;
+	margin:auto;
+	margin-top:10px;
+}
+#pager li{
+	padding: 0px;
+	margin:5px;
+	width:20px;
+	height:20px;
+	border:1px solid white;
+	color:white;
+	list-style: none;
+	opacity: 0.6;
+	float:left;
+	border-radius: 3px;
+	cursor: pointer;
+}
+#pager li:hover{
+	opacity:0.9;
+}
+
           </style>
 
 
           <section id="two" class="section scrollspy">
-
-            <a href="#" onclick="step(1); return false;" style="color: #fff">Step 1</a>
-              <a href="#" onclick="step(2); return false;" style="color: #fff">Step 2</a>
-              <a href="#" onclick="step(3); return false;" style="color: #fff">Step 3</a>
       <div class="slider">
               <div class="content-switcher" id="content1">
-              <div class="row">
-                  <div class="col s12 l2 m2">
-                      <br/>
-                  </div>
-                  <div class="col s12 l10 m10">
-                      <b class="success">success stories<br>with apps</b>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col s12 l2 m2 hide-on-small-only">
-                      <br/>
-                  </div>
-  		      <div class="col s12 l1 m1">
-                    1/5
+                <div class="row" style="padding-top:30px;">
+                    <div class="col s12 l2 m2">
+                        <br/>
+                    </div>
+                    <div class="col s12 l5 m5">
+                        <b class="success">success stories<br>with apps</b>
+                        <br/>
+                      <p> 1/5</p>
+                        <br>
+                        <img  src="images/lotza.png" style="padding-right:30px;"><b style ="font-family:Poppins;font-size:79px;color:#ffffff;letter-spacing:-4px;">FAME</b>
+                        <br/>
+                        <p class="white-text" style="font-size:12px;line-height:27px;">LOTZA enable payments through Virtual ID through the Unified <br>payments interface (UPI) which has been rolled out by the
+                              NPCI <br>(National Payments Corporation of India) LOTZA is one of the few<br>UPI PSP App approved by NPCI.</p>
+                        <br/>
+                        <img  src="images/googleplay.png">
+                    </div>
+                    <div class="col s12 m5 l5 center">
+                        <img class="responsive-img" style="padding-top:18%;" src="images/phone.png" width="35% ">
+                    </div>
                 </div>
-  	       </div>
-             <div class="row">
-                 <div class="col s12 l2 m2 hide-on-med-and-down">
-                      <br/>
-                  </div>
-  		      <div class="col s12 l5 m12">
-                    <img  src="images/lotza.png"><h5><b>&nbsp;&nbsp;Fame</b></h5>
-                </div>
-              </div>
-              <div class="row">
-                  <div class="col s12 hide-on-small-only"><br/></div>
-              </div>
-              <div class="row">
-                <div class="col s12 l2 m2 hide-on-med-and-down">
-                      <br/>
-                  </div>
-                  <div class="white-text col s12 m5 l5">LOTZA enable payments through Virtual ID through the Unified <br>payments interface (UPI) which has been rolled out by the
-  		                  NPCI <br>(National Payments Corporation of India) LOTZA is one of the few<br>UPI PSP App approved by NPCI.
-                  </div>
-              <div class="col s12 l5 m5 center"><img  src="images/sample.png" width="50% "></div>
-
-           </div>
-              <div class="row ">
-              <div class="col s12"><br/></div>
-           </div>
-              <div class="row">
-                   <div class="col s12 l2 m2 hide-on-med-and-down">
-                      <br/>
-                   </div>
-                  <div class="col s12 m9 l9">
-  	            <img  src="images/googleplay.png">
-                  </div>
-              </div>
           </div>
 
         <div class="content-switcher" id="content2">
-      <div class="row">
-                  <div class="col s12 l2 m2">
-                      <br/>
-                  </div>
-                  <div class="col s12 l10 m10">
-                      <b class="success">success stories<br>with apps</b>
-                  </div>
+          <div class="row" style="padding-top:30px;">
+              <div class="col s12 l2 m2">
+                  <br/>
               </div>
-              <div class="row">
-                  <div class="col s12 l2 m2 hide-on-small-only">
-                      <br/>
-                  </div>
-  		      <div class="col s12 l1 m1">
-                    1/5
-                </div>
-  	       </div>
-             <div class="row">
-                 <div class="col s12 l2 m2 hide-on-med-and-down">
-                      <br/>
-                  </div>
-  		      <div class="col s12 l5 m12">
-                    <img  src="images/lotza.png"><h5><b>&nbsp;&nbsp;Fame</b></h5>
-                </div>
+              <div class="col s12 l5 m5">
+                  <b class="success">success stories<br>with apps</b>
+                  <br/>
+                <p> 2/5</p>
+                  <br>
+                  <img  src="images/lotza.png" style="padding-right:30px;"><b style ="font-family:Poppins;font-size:79px;color:#ffffff;letter-spacing:-4px;">BYOM</b>
+                  <br/>
+                  <p class="white-text" style="font-size:12px;line-height:27px;">LOTZA enable payments through Virtual ID through the Unified <br>payments interface (UPI) which has been rolled out by the
+                        NPCI <br>(National Payments Corporation of India) LOTZA is one of the few<br>UPI PSP App approved by NPCI.</p>
+                  <br/>
+                  <img  src="images/googleplay.png">
               </div>
-              <div class="row">
-                  <div class="col s12 hide-on-small-only"><br/></div>
-              </div>
-              <div class="row">
-                <div class="col s12 l2 m2 hide-on-med-and-down">
-                      <br/>
-                  </div>
-                  <div class="white-text col s12 m5 l5">LOTZA enable payments through Virtual ID through the Unified <br>payments interface (UPI) which has been rolled out by the
-  		                  NPCI <br>(National Payments Corporation of India) LOTZA is one of the few<br>UPI PSP App approved by NPCI.
-                  </div>
-              <div class="col s12 l5 m5 center"><img  src="images/sample.png" width="50% "></div>
-
-           </div>
-              <div class="row ">
-              <div class="col s12"><br/></div>
-           </div>
-              <div class="row">
-                   <div class="col s12 l2 m2 hide-on-med-and-down">
-                      <br/>
-                   </div>
-                  <div class="col s12 m9 l9">
-  	            <img  src="images/googleplay.png">
-                  </div>
+              <div class="col s12 m5 l5">
+                  <img class="responsive-img" style="padding-top:18%;" src="images/sample.png" width="100% ">
               </div>
           </div>
     </div>
     <div class="content-switcher" id="content3">
-         <div class="row">
-                  <div class="col s12 l2 m2">
-                      <br/>
-                  </div>
-                  <div class="col s12 l10 m10">
-                      <b class="success">success stories<br>with apps</b>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col s12 l2 m2 hide-on-small-only">
-                      <br/>
-                  </div>
-  		      <div class="col s12 l1 m1">
-                    1/5
-                </div>
-  	       </div>
-             <div class="row">
-                 <div class="col s12 l2 m2 hide-on-med-and-down">
-                      <br/>
-                  </div>
-  		      <div class="col s12 l5 m12">
-                    <img  src="images/lotza.png"><h5><b>&nbsp;&nbsp;Fame</b></h5>
-                </div>
-              </div>
-              <div class="row">
-                  <div class="col s12 hide-on-small-only"><br/></div>
-              </div>
-              <div class="row">
-                  <div class="col s12 hide-on-small-only"><br/></div>
-              </div>
-              <div class="row">
-                  <div class="col s12 hide-on-small-only"><br/></div>
-              </div>
-              <div class="row">
-                  <div class="col s12 hide-on-small-only"><br/></div>
-              </div>
-              <div class="row">
-                <div class="col s12 l2 m2 hide-on-med-and-down">
-                      <br/>
-                  </div>
-                  <div class="white-text col s12 m5 l5">LOTZA enable payments through Virtual ID through the Unified <br>payments interface (UPI) which has been rolled out by the
-  		                  NPCI <br>(National Payments Corporation of India) LOTZA is one of the few<br>UPI PSP App approved by NPCI.
-                  </div>
-              <div class="col s12 l5 m5 center"><img  src="images/sample.png" width="50% "></div>
-
-           </div>
-              <div class="row ">
-              <div class="col s12"><br/></div>
-           </div>
-              <div class="row">
-                   <div class="col s12 l2 m2 hide-on-med-and-down">
-                      <br/>
-                   </div>
-                  <div class="col s12 m9 l9">
-  	            <img  src="images/googleplay.png">
-                  </div>
-              </div>
+      <div class="row" style="padding-top:30px;">
+          <div class="col s12 l2 m2">
+              <br/>
           </div>
-    </div>
-
+          <div class="col s12 l5 m5">
+              <b class="success">success stories<br>with apps</b>
+              <br/>
+            <p> 1/5</p>
+              <br>
+              <img  src="images/lotza.png" style="padding-right:30px;"><b style ="font-family:Poppins;font-size:79px;color:#ffffff;letter-spacing:-4px;">DAO</b>
+              <br/>
+              <p class="white-text" style="font-size:12px;line-height:27px;">LOTZA enable payments through Virtual ID through the Unified <br>payments interface (UPI) which has been rolled out by the
+                    NPCI <br>(National Payments Corporation of India) LOTZA is one of the few<br>UPI PSP App approved by NPCI.</p>
+              <br/>
+              <img  src="images/googleplay.png">
+          </div>
+          <div class="col s12 m5 l5">
+              <img class="responsive-img" style="padding-top:18%;" src="images/dao.png" width="100%">
+          </div>
+      </div>
+      </div>
+    <div class="row">
+      <div class="col s4 l5 m5 "><br/></div>
+      <div class="col s4 l2 m2 center">
+    <ul id="pager">
+  <a href="#" onclick="step(1); return false;" style="color: #fff"><li style="text-align:center">1</li></a>
+    <a href="#" onclick="step(2); return false;" style="color: #fff"><li style="text-align:center">2</li></a>
+    <a href="#" onclick="step(3); return false;" style="color: #fff"><li  style="text-align:center">3</li></a>
+          </ul>
+        </div>
+      </div>
 
           </section>
 
