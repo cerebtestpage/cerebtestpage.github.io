@@ -213,10 +213,8 @@ section
 
 	position: fixed !important;
 	margin-top: 7%;
-/*
-	left: 5%;
-	top: 75%;
-*/
+    padding-bottom: 20px;
+    bottom: 0;
 	list-style-type: none;
 	z-index: 1000;
 /*	padding-right: 0px !important;*/
