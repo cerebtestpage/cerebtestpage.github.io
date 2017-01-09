@@ -6874,6 +6874,8 @@ input[type=range]:focus::-ms-fill-upper {
   padding-bottom: 60px;
   background-color: #fff;
   z-index: 999;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   overflow-y: auto;
   will-change: transform;
   -webkit-backface-visibility: hidden;
@@ -6942,7 +6944,6 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav li > a > [class^="mdi-"], .side-nav li > a > [class*="mdi-"],
 .side-nav li > a > i.material-icons {
   float: left;
-  height: 48px;
   line-height: 48px;
   margin: 0 32px 0 0;
   width: 24px;
@@ -6967,22 +6968,22 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .side-nav .userView {
+  overflow: hidden;
   position: relative;
   padding: 32px 32px 0;
   margin-bottom: 8px;
 }
 
-.side-nav .userView > a {
+.side-nav .userView a {
   height: auto;
   padding: 0;
 }
 
-.side-nav .userView > a:hover {
+.side-nav .userView a:hover {
   background-color: transparent;
 }
 
 .side-nav .userView .background {
-  overflow: hidden;
   position: absolute;
   top: 0;
   right: 0;
@@ -7002,7 +7003,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .side-nav .userView .name,
 .side-nav .userView .email {
-  font-size: 14px;
+  font-weight: 14px;
   line-height: 24px;
 }
 
@@ -7022,6 +7023,12 @@ input[type=range]:focus::-ms-fill-upper {
   position: fixed;
   top: 0;
   z-index: 998;
+}
+
+.side-nav.fixed a {
+  display: block;
+  padding: 0 16px;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .side-nav.fixed {
@@ -7053,13 +7060,13 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
-.side-nav .collapsible-body > ul:not(.collapsible) > li.active,
-.side-nav.fixed .collapsible-body > ul:not(.collapsible) > li.active {
+.side-nav .collapsible-body li.active,
+.side-nav.fixed .collapsible-body li.active {
   background-color: #ee6e73;
 }
 
-.side-nav .collapsible-body > ul:not(.collapsible) > li.active a,
-.side-nav.fixed .collapsible-body > ul:not(.collapsible) > li.active a {
+.side-nav .collapsible-body li.active a,
+.side-nav.fixed .collapsible-body li.active a {
   color: #fff;
 }
 
