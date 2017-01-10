@@ -5,12 +5,16 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
+        <link rel="stylesheet" href="css/swiper.css">
         <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
-
-
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </head>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script  src="js/idangerous.swiper-1.9.1.min.js"></script>
+
+
       </head>
       <body>
 
@@ -99,57 +103,6 @@
 
 
 
-          <style>
-          .container{
-width: 100%;
-height: auto;
-z-index: -1;
-margin: 0 auto;
-outline:1px solid red;
-overflow: hidden;
-}
-.slider{ width: 100%;}
-.content-switcher{
-width: 100%;
-height: auto;
-float: left;
-position: relative;
-top:0;
-left: 100%;
-display: none;
-}
-.content-switcher:first-child {
-left: 0;
-display:block;
-}
-
-#pager{
-	/* firefox has different center method. this doesn't work for fire fox */
-	/* not in the center*/
-	padding:0px;
-	position:relative;
-	height:50px;
-	margin:auto;
-	margin-top:10px;
-}
-#pager li{
-	padding: 0px;
-	margin:5px;
-	width:20px;
-	height:20px;
-	border:1px solid white;
-	color:white;
-	list-style: none;
-	opacity: 0.6;
-	float:left;
-	border-radius: 3px;
-	cursor: pointer;
-}
-#pager li:hover{
-	opacity:0.9;
-}
-
-          </style>
 
 
           <section id="two" class="section scrollspy">
@@ -162,96 +115,103 @@ display:block;
          <div class="row">
              <div class="col s12"><br/></div>
          </div>
-      <div class="slider">
-              <div class="content-switcher" id="content1">
-                <div class="row" style="padding-top:30px;">
-                    <div class="col s12 l2 m2">
-                        <br/>
-                    </div>
-                    <div class="col s12 l5 m5">
-                        <b class="success">success stories<br>with apps</b>
-                        <br/>
-                      <p class="white-text" style="font-size:12px;letter-spacing:0.5px;line-height:27px;text-align:left;"> 1/5</p>
-                        <br>
-                        <img  src="images/lotza.png" style="padding-right:30px;"><b style ="font-family:Poppins;font-size:79px;color:#ffffff;letter-spacing:-4px;">Fame</b>
-                        <br/>
-                        <p class="white-text" style="font-size:12px;line-height:27px;">LOTZA enable payments through Virtual ID through the Unified <br>payments interface (UPI) which has been rolled out by the
-                              NPCI <br>(National Payments Corporation of India) LOTZA is one of the few<br>UPI PSP App approved by NPCI.</p>
-                        <br/>
-                        <img  src="images/googleplay.png">
-                    </div>
-                    <div class="col s12 m5 l5 center">
-                        <img class="responsive-img" src="images/phone.png" width="35% ">
-                    </div>
-                </div>
-          </div>
+         <div class="swiper-container">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide">
+               <div class="row hide-on-med-and-up" style="padding-top:30px;padding-left:5px; padding-right:5px; padding-bottom:80px;">
+                 <div class="col s12 l2 m2">
+                     <br/>
+                 </div>
+                 <div class="col s12 l5 m5">
+                     <b class="success">success stories<br>with apps</b>
+                     <br/>
+                   <p class="white-text" style="font-size:12px;letter-spacing:0.5px;line-height:27px;text-align:left;"> 1/5</p>
+                     <br>
+                     <img  src="images/lotza.png" style="padding-right:30px;"><b style ="font-family:Poppins;font-size:79px;color:#ffffff;letter-spacing:-4px;">Fame</b>
+                     <br/>
+                     <p class="white-text" style="font-size:12px;line-height:27px;">LOTZA enable payments through Virtual ID through the Unified <br>payments interface (UPI) which has been rolled out by the
+                           NPCI <br>(National Payments Corporation of India) LOTZA is one of the few<br>UPI PSP App approved by NPCI.</p>
+                     <br/>
+                     <img  src="images/googleplay.png">
+                 </div>
+                 <div class="col s12 m5 l5 center">
+                     <img class="responsive-img" src="images/phone.png" width="35% " style="padding-bottom:10px;">
+                 </div>
+             </div>
+                 <div class="row hide-on-small-only" style="padding-top:30px; ">
+               <div class="col s12 l2 m2">
+                   <br/>
+               </div>
+               <div class="col s12 l5 m5">
+                   <b class="success">success stories<br>with apps</b>
+                   <br/>
+                 <p class="white-text" style="font-size:12px;letter-spacing:0.5px;line-height:27px;text-align:left;"> 1/5</p>
+                   <br>
+                   <img  src="images/lotza.png" style="padding-right:30px;"><b style ="font-family:Poppins;font-size:79px;color:#ffffff;letter-spacing:-4px;">Fame</b>
+                   <br/>
+                   <p class="white-text" style="font-size:12px;line-height:27px;">LOTZA enable payments through Virtual ID through the Unified <br>payments interface (UPI) which has been rolled out by the
+                         NPCI <br>(National Payments Corporation of India) LOTZA is one of the few<br>UPI PSP App approved by NPCI.</p>
+                   <br/>
+                   <img  src="images/googleplay.png">
+               </div>
+               <div class="col s12 m5 l5 center">
+                   <img class="responsive-img" src="images/phone.png" width="35% " style="padding-bottom:10px;">
+               </div>
+           </div>
+         </div>
 
-        <div class="content-switcher" id="content2">
-          <div class="row" style="padding-top:30px;">
-              <div class="col s12 l2 m2">
-                  <br/>
-              </div>
-              <div class="col s12 l5 m5">
-                  <b class="success">success stories<br>with apps</b>
-                  <br/>
-                <p class="white-text" style="font-size:12px;letter-spacing:0.5px;line-height:27px;text-align:left;">2/5</p>
-                  <br>
-                  <img  src="images/lotza.png" style="padding-right:30px;"><b style ="font-family:Poppins;font-size:79px;color:#ffffff;letter-spacing:-4px;">BYOM</b>
-                  <br/>
-                  <p class="white-text" style="font-size:12px;line-height:27px;">LOTZA enable payments through Virtual ID through the Unified <br>payments interface (UPI) which has been rolled out by the
-                        NPCI <br>(National Payments Corporation of India) LOTZA is one of the few<br>UPI PSP App approved by NPCI.</p>
-                  <br/>
-                  <img  src="images/googleplay.png">
-              </div>
-              <div class="col s12 m5 l5">
-                  <img class="responsive-img" style="padding-top:7%;" src="images/sample.png" width="100% ">
-              </div>
-          </div>
-    </div>
-    <div class="content-switcher" id="content3">
-      <div class="row" style="padding-top:30px;">
-          <div class="col s12 l2 m2">
-              <br/>
-          </div>
-          <div class="col s12 l5 m5">
-              <b class="success">success stories<br>with apps</b>
-              <br/>
-            <p class="white-text" style="font-size:12px;letter-spacing:0.5px;line-height:27px;text-align:left;"> 3/5</p>
-              <br>
-              <img  src="images/lotza.png" style="padding-right:30px;"><b style ="font-family:Poppins;font-size:79px;color:#ffffff;letter-spacing:-4px;">DAO</b>
-              <br/>
-              <p class="white-text" style="font-size:12px;line-height:27px;">LOTZA enable payments through Virtual ID through the Unified <br>payments interface (UPI) which has been rolled out by the
-                    NPCI <br>(National Payments Corporation of India) LOTZA is one of the few<br>UPI PSP App approved by NPCI.</p>
-              <br/>
-              <img  src="images/googleplay.png">
-          </div>
-          <div class="col s12 m5 l5">
-              <img class="responsive-img" style="padding-top:7%;" src="images/dao.png" width="100%">
-          </div>
-      </div>
-      </div>
-          <div class="row hide-on-med-and-up">
-                  <div class="col s12 "><br/></div>
-              </div>
-              <div class="row hide-on-med-and-up">
-                  <div class="col s12"><br/></div>
-              </div>
-           <div class="row hide-on-med-and-up">
-                  <div class="col s12"><br/></div>
-              </div>
-              <div class="row hide-on-med-and-up">
-                  <div class="col s12"><br/></div>
-              </div>
-    <div class="row">
-      <div class="col s4 l5 m5 "><br/></div>
-      <div class="col s4 l2 m2 center">
-    <ul id="pager">
-  <a href="#" onclick="step(1); return false;" style="color: #fff"><li style="text-align:center">1</li></a>
-    <a href="#" onclick="step(2); return false;" style="color: #fff"><li style="text-align:center">2</li></a>
-    <a href="#" onclick="step(3); return false;" style="color: #fff"><li  style="text-align:center">3</li></a>
-          </ul>
-        </div>
-      </div>
+
+   <div class="swiper-slide">
+     <div class="row" style="padding-top:30px;padding-left:5px;padding-right:5px;  ">
+         <div class="col s12 l2 m2">
+             <br/>
+         </div>
+         <div class="col s12 l5 m5">
+             <b class="success">success stories<br>with apps</b>
+             <br/>
+           <p class="white-text" style="font-size:12px;letter-spacing:0.5px;line-height:27px;text-align:left;">2/5</p>
+             <br>
+             <img  src="images/lotza.png" style="padding-right:30px;"><b style ="font-family:Poppins;font-size:79px;color:#ffffff;letter-spacing:-4px;">BYOM</b>
+             <br/>
+             <p class="white-text" style="font-size:12px;line-height:27px;">LOTZA enable payments through Virtual ID through the Unified <br>payments interface (UPI) which has been rolled out by the
+                   NPCI <br>(National Payments Corporation of India) LOTZA is one of the few<br>UPI PSP App approved by NPCI.</p>
+             <br/>
+             <img  src="images/googleplay.png">
+         </div>
+         <div class="col s12 m5 l5">
+             <img class="responsive-img" style="padding-top:7%;" src="images/sample.png" width="100% ">
+         </div>
+     </div>
+   </div>
+   <div class="swiper-slide">
+    <div class="row" style="padding-top:30px;padding-left:5px; padding-right:5px; ">
+     <div class="col s12 l2 m2">
+         <br/>
+     </div>
+     <div class="col s12 l5 m5">
+         <b class="success">success stories<br>with apps</b>
+         <br/>
+       <p class="white-text" style="font-size:12px;letter-spacing:0.5px;line-height:27px;text-align:left;"> 3/5</p>
+         <br>
+         <img  src="images/lotza.png" style="padding-right:30px;"><b style ="font-family:Poppins;font-size:79px;color:#ffffff;letter-spacing:-4px;">DAO</b>
+         <br/>
+         <p class="white-text" style="font-size:12px;line-height:27px;">LOTZA enable payments through Virtual ID through the Unified <br>payments interface (UPI) which has been rolled out by the
+               NPCI <br>(National Payments Corporation of India) LOTZA is one of the few<br>UPI PSP App approved by NPCI.</p>
+         <br/>
+         <img  src="images/googleplay.png">
+     </div>
+     <div class="col s12 m5 l5">
+         <img class="responsive-img" style="padding-top:7%;" src="images/dao.png" width="100%">
+     </div>
+   </div>
+   </div>
+   </div>
+   <!-- Add Pagination -->
+   <div class="swiper-pagination"></div>
+   <!-- Add Arrows -->
+   <div class="swiper-button-next"></div>
+   <div class="swiper-button-prev"></div>
+   </div>
 
           </section>
 
@@ -460,31 +420,24 @@ display:block;
 
     </section>
 
-  <script>
-  function step(n){
-$(".content-switcher").css('display', 'none');
-$(".content-switcher").css('left', '100%');
-$('#content'+n).css('display', 'block');
-if(n==1){
-  $(".content-switcher").animate({
-    "left":"0px"
-  },"slow");
-} else if(n==2){
-  $(".content-switcher").animate({
-    "left":"0px"
-  },"slow");
-} else if(n==3){
-  $(".content-switcher").animate({
-    "left":"0px"
-  },"slow");
-}
-}
-  </script>
+    <script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        keyboardControl: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+    });
+    </script>
+
+    </script>
 
 
 
         <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
         <script type="text/javascript" src="js/materialize.js"></script>
         <script>
         $(document).ready(function(){
