@@ -299,40 +299,6 @@ a .blueline:hover
 }
 
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #E54646;
-	opacity: 6;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
 
 
 #two
@@ -340,16 +306,14 @@ a .blueline:hover
     background-image: url("../images/bg2.png");
 		background-size: cover;
 		width: 100%;
-		/*	height: 100vh;*/
-		/*	position: fixed;*/
 		top:0;
 		bottom: 0;
 		left: 0;
 		right: 0;
-		max-width: 100%;
 		display: relative;
 		overflow: hidden;
-			height: auto;
+			min-width: 100%;
+		  min-height: 100%;
 
 
 
@@ -470,18 +434,16 @@ text-align:left;
 #three
 {
 		background-image: url(../images/bg3.png);
-	background-size: cover;
-	width: 100%;
-/*	height: 100vh;*/
-/*	position: fixed;*/
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	max-width: 100%;
-	display: relative;
-	overflow: hidden;
-    height: auto;
+		background-size: cover;
+		width: 100%;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: relative;
+		overflow: hidden;
+			min-width: 100%;
+			min-height: 100%;
 
 
 }
@@ -574,19 +536,16 @@ visibility: hidden;
 #four
 {
 		background-image: url(../images/bg4.png);
-	background-size: cover;
-	width: 100%;
-/*	height: 100vh;*/
-/*	position: fixed;*/
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	max-width: 100%;
-	display: relative;
-	overflow: hidden;
-    height: auto;
-
+		background-size: cover;
+		width: 100%;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: relative;
+		overflow: hidden;
+			min-width: 100%;
+		  min-height: 100%;
 }
 
 .clients
