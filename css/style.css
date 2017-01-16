@@ -49,8 +49,7 @@ section
 	right: 0;
 	display: relative;
 	overflow: hidden;
-		min-width: 100%;
-	  min-height: 100vh;
+	min-height: 100vh;
 }
 
 
@@ -307,9 +306,8 @@ a .blueline:hover
 		left: 0;
 		right: 0;
 		display: relative;
-		overflow: hidden;
-			min-width: 100%;
-		  min-height: 100%;
+		/*overflow: hidden;*/
+		min-height: 1024px;
 
 
 

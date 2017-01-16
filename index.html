@@ -52,7 +52,9 @@
  }
 </style>
 <div class="fixed-items hide-on-small-only">
+
   <ul id="slide-out" class="side-nav" style="padding-top:10%">
+    <a class="right" href="#" onclick=" $('.button-collapse').sideNav('hide');" class="button-collapse" style="top:0;margin-top:-100px;">X</a>
     <li><a href="#one">about.</a></li>
     <li><a href="#two">solutions.</a></li>
     <li><a href="#three">industries.</a></li>
@@ -146,7 +148,7 @@
                    <br/>
                    <img  src="images/googleplay.png">
                </div>
-               <div class="col s12 m5 l5 center">
+               <div class="col s12 m5 l5 center" style="z-index:1000">
                    <img class="responsive-img" src="images/phone.png" width="35% ">
                </div>
            </div>
@@ -451,7 +453,11 @@
         });
 
         </script>
-
+<script>
+  function side-nav-close(){
+    document.getElementById("slide-out").style.display = "none";
+  }
+</script>
       </body>
 
     </html>
