@@ -2262,7 +2262,7 @@ $(document).ready(function(){
             width: ''
           });
 
-          $('#sidenav-overlay').velocity({opacity: 0}, {duration: 200,
+          $('#sidenav-overlay').velocity({opacity: 0}, {duration: 100,
               queue: false, easing: 'easeOutQuad',
             complete: function() {
               $(this).remove();

@@ -6909,11 +6909,11 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav a {
   color: rgba(255, 255, 255,1);
   display: block;
-  font-size: 1.3em;
+  font-size: 2em;
   font-weight: 700;
   height: 48px;
   line-height: 48px;
-  padding: 0 32px;
+  padding: 0 32px 70px 0;
   text-align: center;
 }
 
@@ -7054,7 +7054,7 @@ input[type=range]:focus::-ms-fill-upper {
             transform: translateX(105%);
   }
   .side-nav a {
-    padding: 0 16px;
+    padding: 0 32px 70px 0;
   }
   .side-nav .userView {
     padding: 16px 16px 0;
