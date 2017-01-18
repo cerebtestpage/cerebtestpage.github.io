@@ -6860,9 +6860,9 @@ input[type=range]:focus::-ms-fill-upper {
   border-left: 2px solid #ea4a4f;
 }
 
-.side-nav {
+/*.side-nav {
   position: fixed;
-  width: 100%;
+  width: 30%;
   left: 0;
   top: 0;
   margin: 0;
@@ -6871,7 +6871,8 @@ input[type=range]:focus::-ms-fill-upper {
   height: 100%;
   height: calc(100% + 60px);
   height: -moz-calc(100%);
-  padding-bottom: 60px;
+  padding-top:50px;
+  padding-left: 20px;
   background-color:rgba(232,53,75,0.8);
   z-index: 1001;
   -webkit-backface-visibility: hidden;
@@ -6891,7 +6892,7 @@ input[type=range]:focus::-ms-fill-upper {
   left: auto;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-}
+}*/
 
 .side-nav .collapsible {
   margin: 0;
@@ -6909,12 +6910,11 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav a {
   color: rgba(255, 255, 255,1);
   display: block;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 700;
   height: 48px;
   line-height: 48px;
-  padding: 0 32px 70px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .side-nav a:hover {
