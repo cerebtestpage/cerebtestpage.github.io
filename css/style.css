@@ -158,7 +158,7 @@ section
 {
 
 
-	padding: 35px;
+	padding: 30px !important;
 	background-color: white;
 
 	opacity: 0.6;
@@ -166,11 +166,7 @@ section
 	font-size: 10px;
 
 	position:inherit;
-/*
-	left: 55%;
 
-*/
-	margin-top: 8%;
 	width: 25%;
 	height: 50%;
 
@@ -209,8 +205,8 @@ section
 {
 
 	position: fixed !important;
-	margin-top: 7%;
-    padding-bottom: 20px;
+font-size: 11px;
+    padding-bottom: 5px;
     bottom: 0;
 	list-style-type: none;
 	z-index: 1000;
@@ -228,13 +224,7 @@ section
 }
 
 
-#bluemenu
-{
 
-	font-size: 12px;
-	color: #108FA8;
-
-}
 
 .blueline
 {
@@ -1085,4 +1075,76 @@ color:#3cb885;
 letter-spacing:0px;
 text-align:center;
 */
+}
+.side-nav {
+  position: fixed;
+  width: 30%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  height: 100%;
+  height: calc(100% + 60px);
+  height: -moz-calc(100%);
+  padding-top:160px;
+  padding-left: 102px !important;
+  background-color:rgba(232,53,75,0.8);
+  z-index: 1001;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow-y: auto;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateX(-105%);
+          transform: translateX(-105%);
+	border-top: 100px transparent;
+}
+.side-nav a {
+  color: rgba(255, 255, 255,1);
+  display: block;
+  font-size: 1em;
+  font-weight: 700;
+  height: 48px;
+  line-height: 48px;
+  text-align: left;
+}
+
+p.hire_text{
+	background-color: rgb(232,52,75);
+	font-size: 11px;
+	display: block;
+	padding-top: 4px;
+	font-weight: 900;
+	border-radius: 2px;
+	width:120px;
+	color: white;
+	height: 21px;
+	right:460px;
+
+}
+a.sim{
+	font-family: Poppins;
+	color: #108fa8;
+	font-size: 11px;
+	opacity: 0.6;
+		letter-spacing:0px;
+	-webkit-transition: ease-in-out .4s;
+	 -moz-transition: ease-in-out .4s;
+	 -o-transition:ease-in-out .4s;
+	 transition:ease-in-out .4s;
+	 font-weight: 400;
+}
+a.sim:hover{
+	font-family: Poppins;
+	color: #000;
+	font-size: 11px;
+	opacity: 0.9;
+}
+a.active{
+	font-family:Poppins;
+	font-weight: bold;
+	color:#000 !important;
+	letter-spacing:0px;
 }
