@@ -294,7 +294,7 @@ a .blueline:hover
 		right: 0;
 		display: relative;
 		/*overflow: hidden;*/
-		height: auto;
+		height: 100%;
 
 
 
