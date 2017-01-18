@@ -283,9 +283,6 @@ a .blueline:hover
 
 }
 
-
-
-
 #two
 {
     background-image: url("../images/bg2.png");
@@ -297,7 +294,7 @@ a .blueline:hover
 		right: 0;
 		display: relative;
 		/*overflow: hidden;*/
-		min-height: 1024px;
+		height: auto;
 
 
 
