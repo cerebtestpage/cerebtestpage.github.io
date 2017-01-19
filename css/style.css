@@ -27,8 +27,8 @@ body
 {
     font-family: 'Poppins', sans-serif;
     margin:0;
-		text-rendering: optimizeLegibility !important;
-   -webkit-font-smoothing: antialiased !important;
+   -webkit-font-smoothing: antialiased;
+    
 
 }
 
@@ -156,7 +156,7 @@ body
 
 
 	padding: 30px !important;
-	background-color: rgba(255,255,255, 0.6);
+	background-color: rgba(255,255,255, 0.5);
 
 	opacity: 1;
 /*	color: black;*/
@@ -167,7 +167,7 @@ body
 	width: 25%;
 	height: 50%;
 
-
+    box-shadow: 10px 10px 250px rgba(0,0,0,0.1);
 }
 
 .caption b
@@ -1115,12 +1115,11 @@ a.sim{
 	font-family: Poppins;
 	color: #108fa8;
 	font-size: 11px;
-	opacity: 0.6;
 		letter-spacing:0px;
-	-webkit-transition: ease-in-out .4s;
-	 -moz-transition: ease-in-out .4s;
-	 -o-transition:ease-in-out .4s;
-	 transition:ease-in-out .4s;
+	-webkit-transition:all ease .2s;
+	 -moz-transition:all ease .2s;
+	 -o-transition:all ease .2s;
+	 transition:all ease .2s;
 	 font-weight: 400;
 }
 a.sim:hover{
@@ -1129,10 +1128,15 @@ a.sim:hover{
     font-weight: 500;
 	font-size: 11px;
 	opacity: 0.9;
+    padding-left: 2px;
 }
 a.active{
 	font-family:'Poppins';
 	font-weight: bold;
 	color:#213742;
 
+}
+
+#bluemenu {
+   padding: 5px 0px 5px 0px;   
 }
