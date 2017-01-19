@@ -95,11 +95,12 @@ section
 
     padding: 0 !important;
 	font-family: 'Poppins', sans-serif;
+    
 }
 
 #one .menu a
 {
-    color: black;
+    color: #213742;
 
 }
 
@@ -242,11 +243,7 @@ font-size: 11px;
 a:hover
 {
 
-	color: black!important;
-
-
-
-
+	color: #213742!important;
 }
 
 
@@ -1132,13 +1129,14 @@ a.sim{
 }
 a.sim:hover{
 	font-family: Poppins;
-	color: #000;
+	color: #213742;
+    font-weight: 500;
 	font-size: 11px;
 	opacity: 0.9;
 }
 a.active{
-	font-family:Poppins;
+	font-family:'Poppins';
 	font-weight: bold;
-	color:#000 !important;
-	letter-spacing:0px;
+	color:#213742;
+	
 }
