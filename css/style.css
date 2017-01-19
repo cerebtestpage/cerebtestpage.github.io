@@ -37,6 +37,7 @@ body
 #one
 {
 	background-image: url("../images/background.png");
+    background: rgba(20,20,20,);
 	background-size: cover;
 	width: 100%;
 	top:0;
@@ -46,6 +47,17 @@ body
 	display: relative;
 	overflow: hidden;
 	min-height: 100vh;
+}
+
+.bg_anim {
+  -webkit-animation: transp ease-out 0.6s;
+}
+
+@-webkit-keyframes transp {
+    
+  0% { opacity: 0; }
+    100% { opacity: 1;}
+
 }
 
 
@@ -168,6 +180,17 @@ body
 	height: 50%;
 
     box-shadow: 10px 10px 250px rgba(0,0,0,0.1);
+}
+
+.blur {
+  -webkit-animation: blur ease-out 1.2s;
+}
+
+@-webkit-keyframes blur {
+    
+  0% { -webkit-filter: blur(10px); opacity: 0; }
+    40% { opacity: 1;}
+ 100% { -webkit-filter: blur(0px); }
 }
 
 .caption b
