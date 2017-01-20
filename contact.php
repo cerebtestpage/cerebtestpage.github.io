@@ -31,6 +31,14 @@
             height: auto;
 
       }
+      #frmContact {border-top:#F0F0F0 2px solid;background:#FAF8F8;padding:10px;}
+#frmContact div{margin-bottom: 15px}
+#frmContact div label{margin-left: 5px}
+.demoInputBox{padding:10px; border:#F0F0F0 1px solid; border-radius:4px;}
+.error{background-color: #FF6600;border:#AA4502 1px solid;padding: 5px 10px;color: #FFFFFF;border-radius:4px;}
+.success{background-color: #12CC1A;border:#0FA015 1px solid;padding: 5px 10px;color: #FFFFFF;border-radius:4px;}
+.info{font-size:.8em;color: #FF6600;letter-spacing:2px;padding-left:5px;}
+.btnAction{background-color:#2FC332;border:0;padding:10px 40px;color:#FFF;border:#F0F0F0 1px solid; border-radius:4px;}
       </style>
 
     </head>
@@ -62,11 +70,12 @@
   <br/>
   <div class="center col s12 l6 m6"><p style="font-family:'Poppins'; font-size:36px; color:#484848; letter-spacing:-0.62px; line-height:43px;">Write to us.</p></div>
   <div class="row">
-    <div id="mail-status"></div>
+
     <div class="col s12 l3 m3 hide-on-small-only">
       <br/>
     </div>
    <form class="col s12 l6 m6">
+     <div id="mail-status"></div>
      <div class="row">
        <div class="input-field col s12">
          <i class="material-icons prefix">account_circle</i>
@@ -195,24 +204,27 @@
       <script type="text/javascript" src="js/swiper.js"></script>
       <script type="text/javascript" src="js/swiper.jquery.js"></script>
       <script>
-      function sendContact() {
-        var valid;
-  valid = true;
-  if(valid) {
-      jQuery.ajax({
-          url: "contact_mail.php",
-          data:'userName='+$("#userName").val()+'&userEmail='+
-          $("#userEmail").val()+'&content='+
-          $(content).val(),
-          type: "POST",
-          success:function(data){
-              $("#mail-status").html(data);
-          },
-          error:function (){}
-      });
-  }
+function sendContact() {
+	var valid;
+	valid = validateContact();
+	if(valid) {
+		jQuery.ajax({
+		url: "contact_mail.php",
+		data:'userName='+$("#userName").val()+'&userEmail='+$("#userEmail").val()+'&subject='+$("#subject").val()+'&content='+$(content).val(),
+		type: "POST",
+		success:function(data){
+		$("#mail-status").html(data);
+		},
+		error:function (){}
+		});
+	}
 }
-      </script>
+
+function validateContact() {
+	var valid = true;
+	return valid;
+}
+</script>
       <script>
       $(document).ready(function(){
          $(".button-collapse").sideNav();
