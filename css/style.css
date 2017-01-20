@@ -304,6 +304,7 @@ a .blueline:hover
 {
     background-image: url("../images/bg2.png");
 		background-size: cover;
+    padding-top: 40px;
 		width: 100%;
 		top:0;
 		bottom: 0;
@@ -325,8 +326,9 @@ font-size:24px;
 color:#ffffff;
 letter-spacing:-0.42px;
 line-height:38px;
-text-shadow:0px 20px 1px rgba(60,184,133,0.20);
+text-shadow:0px 15px 1px rgba(60,184,133,0.20);
 text-align:left;
+  
 
 }
 
