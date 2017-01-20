@@ -14,7 +14,7 @@
     </head>
 <style>
 #c-one{
-			background-color: #E9E9E9;
+			background-color: rgba(203, 203, 203,1);
 			background-size: cover;
 			width: 100%;
 			top:0;
@@ -80,7 +80,14 @@ height:auto;
    height: 2%;
 
 }
-
+a.back{
+  color:white;
+  font-size:15px;
+}
+a.back:hover{
+  cursor: pointer;
+  color: inherit;
+}
 </style>
     <body>
        <nav class="hide-on-med-and-up">
@@ -114,8 +121,15 @@ height:auto;
 
       </div>
       <section id="c-one">
-      
-      <div class="row" style="padding-top: 140px;">
+      <div class="row">
+          <div class="col s12 l2 m2">
+            <br/>
+          </div>
+          <div class="col s12 l2 m2">
+          <p style="padding-top:50px;">  <a class="back" onclick="goBack()">&lt; back to careers</a></p>
+          </div>
+        </div>
+      <div class="row" style="padding-top: 100px;">
             <div class="col s12 l3 m3 center"><br/></div>
             <div class="col s12 l6 m6 center"> <b class="center"style="font-family:Poppins; font-size:40px; color:#484848; letter-spacing:-0.62px; line-height:43px; text-shadow:0px 20px 1px rgba(60,184,133,0.20); text-align:center; padding-top: 50px;"> MOBILE STRATEGIST / SOLUTIONS ARCHITECT</b></div>
   		</div>
@@ -285,6 +299,11 @@ You´ll fit perfectly into our wacky group!</p>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.js"></script>
+      <script>
+      function goBack() {
+        window.history.back();
+        }
+        </script>
       <script>
       $(document).ready(function(){
         $('.scrollspy').scrollSpy();
