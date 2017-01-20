@@ -210,6 +210,9 @@
    </div>
    <!-- Add Pagination -->
    <div class="swiper-pagination"></div>
+   <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
    </div>
    <br/>
    <br/>
@@ -447,7 +450,7 @@
              $('.hide-on-scroll').fadeIn();
            }
         });
-            
+
         </script>
            <script type="text/javascript">
     var swiper = new Swiper('.swiper-container', {
@@ -459,8 +462,6 @@
         keyboardControl: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-            autoplay: 2000,
-        autoplayDisableOnInteraction: false,
         coverflow: {
             rotate: 120,
             stretch: 50,
