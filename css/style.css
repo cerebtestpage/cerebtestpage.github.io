@@ -28,7 +28,7 @@ body
     font-family: 'Poppins', sans-serif;
     margin:0;
    -webkit-font-smoothing: antialiased;
-    
+
 
 }
 
@@ -1161,5 +1161,12 @@ a.active{
 }
 
 #bluemenu {
-   padding: 5px 0px 5px 0px;   
+   padding: 5px 0px 5px 0px;
+}
+
+img.client_effect{
+	opacity: 0.8;
+}
+img.client_effect:hover{
+	opacity: 1;
 }
