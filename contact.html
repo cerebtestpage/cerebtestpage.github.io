@@ -32,6 +32,7 @@
 
       }
       </style>
+
     </head>
 
     <body>
@@ -61,6 +62,7 @@
   <br/>
   <div class="center col s12 l6 m6"><p style="font-family:'Poppins'; font-size:36px; color:#484848; letter-spacing:-0.62px; line-height:43px;">Write to us.</p></div>
   <div class="row">
+    <div id="mail-status"></div>
     <div class="col s12 l3 m3 hide-on-small-only">
       <br/>
     </div>
@@ -68,21 +70,21 @@
      <div class="row">
        <div class="input-field col s12">
          <i class="material-icons prefix">account_circle</i>
-         <input id="icon_prefix" type="text" class="validate">
-         <label for="icon_prefix">Name</label>
+         <input id="userName" type="text" class="validate" required="" aria-required="true">
+         <label for="userName">Name</label>
        </div>
        <div class="input-field col s12">
          <i class="material-icons prefix">mail</i>
-         <input id="email" type="email" class="validate">
-         <label for="email" data-error="wrong" data-success="right">mail-id</label>
+         <input id="userEmail"  type="email" class="validate" required="" aria-required="true">
+         <label for="userEmail" data-error="wrong" data-success="right">mail-id</label>
        </div>
        <div class="input-field col s12">
           <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-          <label for="icon_prefix2">Message</label>
+          <textarea id="content" class="materialize-textarea"></textarea>
+          <label for="content">Message</label>
         </div>
         <div class="col s12 center">
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+          <button class="btn waves-effect waves-light" type="submit" name="action" onclick="sendContact()">Submit</button>
      </div>
    </form>
    <div class="col s12 l3 m3 hide-on-small-only">
@@ -182,6 +184,9 @@
                    </div>
 
          </section>
+
+
+
       <!--Import jQuery before materialize.js-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script type="text/javascript" src="js/index.js"></script>
@@ -190,9 +195,27 @@
       <script type="text/javascript" src="js/swiper.js"></script>
       <script type="text/javascript" src="js/swiper.jquery.js"></script>
       <script>
+      function sendContact() {
+        var valid;
+  valid = true;
+  if(valid) {
+      jQuery.ajax({
+          url: "contact_mail.php",
+          data:'userName='+$("#userName").val()+'&userEmail='+
+          $("#userEmail").val()+'&content='+
+          $(content).val(),
+          type: "POST",
+          success:function(data){
+              $("#mail-status").html(data);
+          },
+          error:function (){}
+      });
+  }
+}
+      </script>
+      <script>
       $(document).ready(function(){
          $(".button-collapse").sideNav();
-         $('.parallax').parallax();
       });
 
       </script>
