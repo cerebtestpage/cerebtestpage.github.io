@@ -199,7 +199,7 @@ body
 	font-size: 35px;
 	color: #050403;
 /*	color: #4a4a4a;*/
-	text-shadow: 0 20px rgba(60,184,133,0.20);
+	
 	font-family: 'Poppins', sans-serif;
 	line-height: 43px;
 	letter-spacing: -0.61px;
@@ -326,7 +326,7 @@ font-size:24px;
 color:#ffffff;
 letter-spacing:-0.42px;
 line-height:38px;
-text-shadow:0px 15px 1px rgba(60,184,133,0.20);
+
 text-align:left;
 
 
@@ -481,7 +481,7 @@ img .cerebtechlogo
 	position: absolute;
 	margin-top: 28px;
 	margin-left: 20px;
-	text-shadow: 0 25px rgba(60,184,133,0.20);
+	
 
 }
 
@@ -569,7 +569,7 @@ visibility: hidden;
 	line-height: 43px;
 
 
-text-shadow:0px 20px 1px rgba(60,184,133,0.20);
+
 
 
 
@@ -596,7 +596,7 @@ text-shadow:0px 20px 1px rgba(60,184,133,0.20);
 	letter-spacing: 0.61px;
 	line-height: 43px;
 
-text-shadow:0px 20px 1px rgba(60,184,133,0.20)
+
 
 
 
@@ -741,7 +741,7 @@ h4
 letter-spacing:-0.61px;
 line-height:43px;
 */
-text-shadow:0px 20px 1px rgba(60,184,133,0.20);
+
 /*text-align:left;*/
 }
 
@@ -1043,7 +1043,7 @@ color: white;
 letter-spacing:0.35px;
 line-height:37px;
 */
-text-shadow:0px 14px 1px rgba(60,184,133,0.20);
+
 /*
 text-align:center;
 
@@ -1068,7 +1068,7 @@ color:#ffffff;
 /*
 letter-spacing:-0.35px;
 line-height:37px;
-text-shadow:0px 14px 1px rgba(60,184,133,0.20);
+
 text-align:left;
 */
 }
