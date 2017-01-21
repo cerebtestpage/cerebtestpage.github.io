@@ -199,7 +199,7 @@ body
 	font-size: 35px;
 	color: #050403;
 /*	color: #4a4a4a;*/
-	
+
 	font-family: 'Poppins', sans-serif;
 	line-height: 43px;
 	letter-spacing: -0.61px;
@@ -262,7 +262,7 @@ font-size: 11px;
 a:hover
 {
 
-	color: #213742!important;
+	color: #213742;
 }
 
 
@@ -481,7 +481,7 @@ img .cerebtechlogo
 	position: absolute;
 	margin-top: 28px;
 	margin-left: 20px;
-	
+
 
 }
 
