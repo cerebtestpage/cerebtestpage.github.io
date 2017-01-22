@@ -47,6 +47,8 @@ body
 	display: relative;
 	overflow: hidden;
 	min-height: 100vh;
+    z-index: 100;
+    
 }
 
 .bg_anim {
@@ -300,19 +302,15 @@ a .blueline:hover
 
 }
 
-#two
-{
-    background-image: url("../images/bg2.png");
-		background-size: cover;
+#two {
+
+    padding-bottom:1px;
+    background-size: cover;
     padding-top: 40px;
-		width: 100%;
-		top:0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		display: relative;
-		/*overflow: hidden;*/
-		height: auto;
+	width: 100%;
+    position: relative;
+	min-height: 700px;
+    z-index: -10;
 
 
 
@@ -1173,6 +1171,33 @@ img.client_effect:hover{
 	opacity: 1;
 }
 
+
+
+.emen_section {
+    background: url('/images/employee_engagement.png') no-repeat center;
+    background-size: contain;
+    
+}
+
+.byom_section {
+    background: url('/images/loan_manage.png') no-repeat center;
+    background-size: contain;
+    padding-top: 150px !important;
+}
+
+
+.bank_section {
+    background: url('/images/retail_bank.png') no-repeat center;
+    background-size: contain;
+    padding-top: 150px !important;
+}
+
+.dao_section {
+    background: url('/images/dao_bg.png') no-repeat center;
+    background-size: contain;
+    padding-top: 150px !important;
+    
+}
 @media only screen and (max-width: 680px) {
 	.side-nav {
 	  position: fixed;
