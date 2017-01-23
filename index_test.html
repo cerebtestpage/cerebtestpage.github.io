@@ -13,7 +13,7 @@
         <link type="text/css" rel="stylesheet" href="css/swiper.css" />
           <link rel="stylesheet" href="/css/animate.css">
         <!--Let browser know website is optimized for mobile-->
-        
+
 
         <link rel="shortcut icon" type='image/x-icon' href="images/Logo_ico.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -123,7 +123,7 @@
        </div>
          <div class="swiper-container">
            <div class="swiper-wrapper">
-             <div class="swiper-slide">
+             <div class="swiper-slide" style="background-image:url(images/dao_bg.png);">
                  <div class="row" style="padding-top:30px; ">
                <div class="col s12 l2 m2">
                    <br/>
@@ -146,7 +146,7 @@
          </div>
 
 
-   <div class="swiper-slide">
+   <div class="swiper-slide" style="background-image:url(images/bg2.png);">
      <div class="row" style="padding-top:30px;padding-left:5px;padding-right:5px;  ">
          <div class="col s12 l2 m2">
              <br/>
@@ -170,7 +170,7 @@
    </div>
 
 
-   <div class="swiper-slide">
+   <div class="swiper-slide" style="background-image:url(images/bg3.png);">
      <div class="row" style="padding-top:30px;padding-left:5px;padding-right:5px;  ">
          <div class="col s12 l2 m2">
              <br/>
@@ -215,12 +215,7 @@
    <!-- Add Pagination -->
    <div class="swiper-pagination"></div>
    </div>
-   <br/>
-   <br/>
-   <br/>
-   <br/>
-   <br/>
-   <br/>
+
           </section>
 
 
@@ -422,7 +417,7 @@
 
     </section>
 
-    
+
 
 
 
@@ -432,7 +427,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/materialize.js"></script>
-          
+
         <script type="text/javascript" src="js/swiper.js"></script>
           <script type="text/javascript" src="js/swiper.jquery.js"></script>
         <script>
@@ -455,14 +450,16 @@
         });
 
         </script>
-          
-          
+
+
           <script type="text/javascript">
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
+        effect:'flip',
         slidesPerView: 1,
         paginationClickable: true,
         spaceBetween: 30,
+        loop:true,
         keyboardControl: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',

@@ -48,7 +48,7 @@ body
 	overflow: hidden;
 	min-height: 100vh;
     z-index: 100;
-    
+
 }
 
 .bg_anim {
@@ -305,11 +305,9 @@ a .blueline:hover
 #two {
 
     padding-bottom:1px;
-    background-size: cover;
     padding-top: 40px;
 	width: 100%;
     position: relative;
-	min-height: 700px;
     z-index: -10;
 
 
@@ -1176,7 +1174,7 @@ img.client_effect:hover{
 .emen_section {
     background: url('/images/employee_engagement.png') no-repeat center;
     background-size: contain;
-    
+
 }
 
 .byom_section {
@@ -1196,7 +1194,7 @@ img.client_effect:hover{
     background: url('/images/dao_bg.png') no-repeat center;
     background-size: contain;
     padding-top: 150px !important;
-    
+
 }
 @media only screen and (max-width: 680px) {
 	.side-nav {
