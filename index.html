@@ -109,31 +109,26 @@
 
 <section id="two">
   <div class="fixed-items hide-on-small-only">
-  <b class="success">success stories<br>with apps</b>
-
+  <b class="success" style="color:rgba(255,255,255,1);">success stories<br>with apps</b>
   </div>
 
 <div class="swiper-container">
  <div class="swiper-wrapper">
-   <div class="swiper-slide" style="background-image:url(images/dao_bg.png);">
+   <div class="swiper-slide" style="background-image:url(images/employee_app.jpg);">
        <div class="row" style="padding-top:150px; ">
      <div class="col s12 l2 m2">
          <br/>
      </div>
      <div class="col s12 l5 m5">
-                 <p  style="font-size:9px; font-weight:bold; color:rgba(20,20,20,0.8); letter-spacing:0.5px;line-height:27px;text-align:left;"> 1/5</p>
+                 <p  style="font-size:9px; font-weight:bold; color:rgba(255,255,255,1); letter-spacing:0.5px;line-height:27px;text-align:left;"> 1/5</p>
                    <br>
-                   <b style ="font-family:Poppins; font-size:34px; color:rgba(20,20,20,1); letter-spacing:-2px;">Employee Engagement </br> Solution</b>
+                   <b style ="font-family:Poppins; font-size:34px; color:rgba(255,255,255,1); letter-spacing:-2px;">Employee Engagement </br> Solution</b>
                    <br/>
-                   <p style="font-family: 'Roboto Slab'; font-size:18px; line-height:27px; color:rgba(50,50,50,1);">FAME ensures Secure and Convenient tools right to your  <br>employees for simple anytime access across devices,<br>ensuring the information you need is always at your finger<br> tips 24/7.</p>
+                   <p style="font-family: 'Roboto Slab'; font-size:18px; line-height:27px; color:rgba(255,255,255,1);">FAME ensures Secure and Convenient tools<br> right to your employees for simple<br> anytime access across devices,ensuring<br> the information you need is always at your<br> fingertips 24/7.</p>
                    <br/>
 
                </div>
-     <div class="col s12 m5 l5 center" style="z-index:1000">
-         <img class="responsive-img" src="images/phone.png" width="35% ">
-         <br/>
-         <a class="cereb-green" href="lotza-info.html" style="font-weight:bold;font-family:Poppins;font-size:16px;letter-spacing:0px;text-align:left;">more info</a>
-     </div>
+
  </div>
 </div>
 
@@ -205,7 +200,11 @@
    </div>
  </div>
  </div>
- <div class="swiper-pagination"></div>
+ <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
  </div>
 
           </section>
@@ -426,7 +425,6 @@
 
         <!--Import jQuery before materialize.js-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/materialize.js"></script>
         <script type="text/javascript" src="js/swiper.js"></script>
         <script type="text/javascript" src="js/swiper.jquery.js"></script>
@@ -451,18 +449,16 @@
         });
 
         </script>
-        <script type="text/javascript">
-  var swiper = new Swiper('.swiper-container', {
-      pagination: '.swiper-pagination',
-      slidesPerView: 1,
-      paginationClickable: true,
-      spaceBetween: 30,
-      loop:true,
-      keyboardControl: true,
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-  });
-  </script>
+        <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        effect: 'fade'
+    });
+    </script>
       </body>
 
     </html>
