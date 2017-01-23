@@ -19,32 +19,49 @@
         <link rel="shortcut icon" type='image/x-icon' href="images/Logo_ico.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <style>
-  .no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(images/Preloader_3.gif) center no-repeat #fff;
-}
+  #preloader  {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #fefefe;
+     z-index: 99;
+    height: 100%;
+ }
+
+#status  {
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     background-image: url(images/Preloader_3.gif);
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: -100px 0 0 -100px;
+ }
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script>
 	//paste this code under head tag or in a seperate js file.
 	// Wait for window load
-	$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
+	jQuery(window).load(function() {
+        // will first fade out the loading animation
+    jQuery("#status").fadeOut();
+        // will fade out the whole DIV that covers the website.
+    jQuery("#preloader").delay(1000).fadeOut("slow");
+})
+
 </script>
       </head>
 
       <body>
-<div class="se-pre-con"></div> 
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+ 
           <nav class="hide-on-med-and-up">
       <div class="nav-wrapper">
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
