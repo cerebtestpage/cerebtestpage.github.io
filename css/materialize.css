@@ -2233,6 +2233,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
+  color: black;
 }
 
 /* Text-level semantics
@@ -4119,6 +4120,7 @@ nav ul li {
 
 nav ul li.active {
   background-color: rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 nav ul a {
