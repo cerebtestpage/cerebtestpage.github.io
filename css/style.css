@@ -305,7 +305,6 @@ a .blueline:hover
 #two {
 
     padding-bottom:1px;
-    padding-top: 40px;
 	width: 100%;
     position: relative;
     z-index: -10;
@@ -319,11 +318,16 @@ a .blueline:hover
 {
 	font-family:Poppins;
 font-size:24px;
-color:#ffffff;
+color:#000;
 letter-spacing:-0.42px;
 line-height:38px;
-
+left:0;
+top:0;
+position: fixed;
 text-align:left;
+z-index:1500;
+padding-left: 238px;
+padding-top: 63px;
 
 
 }
