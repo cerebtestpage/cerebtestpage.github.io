@@ -323,7 +323,7 @@ letter-spacing:-0.42px;
 line-height:38px;
 left:0;
 top:0;
-position: fixed;
+position: absolute;
 text-align:left;
 z-index:1500;
 padding-left: 238px;
