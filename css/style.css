@@ -15,9 +15,7 @@ body
 }
 */
 
-.fixed-item{
-	position: fixed;
-}
+
 
 .home-pad{
 	padding-top: 20px;
@@ -47,8 +45,6 @@ body
 	display: relative;
 	overflow: hidden;
 	min-height: 100vh;
-    z-index: 100;
-
 }
 
 .bg_anim {
@@ -201,7 +197,7 @@ body
 	font-size: 35px;
 	color: #050403;
 /*	color: #4a4a4a;*/
-
+	text-shadow: 0 20px rgba(60,184,133,0.20);
 	font-family: 'Poppins', sans-serif;
 	line-height: 43px;
 	letter-spacing: -0.61px;
@@ -264,7 +260,7 @@ font-size: 11px;
 a:hover
 {
 
-	color: #213742;
+	color: #213742!important;
 }
 
 
@@ -302,12 +298,18 @@ a .blueline:hover
 
 }
 
-#two {
+#two
+{
 
-    padding-bottom:1px;
-	width: 100%;
-    position: relative;
-    z-index: -10;
+
+		width: 100%;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: relative;
+		/*overflow: hidden;*/
+		height: auto;
 
 
 
@@ -316,18 +318,18 @@ a .blueline:hover
 
 .success
 {
-	font-family:Poppins;
+color:rgba(255,255,255,1);
+font-family:'Poppins';
 font-size:24px;
-color:#000;
 letter-spacing:-0.42px;
 line-height:38px;
+text-align:left;
 left:0;
 top:0;
-position: absolute;
-text-align:left;
-z-index:1500;
 padding-left: 238px;
 padding-top: 63px;
+z-index:1500;
+position: absolute;
 
 
 }
@@ -481,7 +483,7 @@ img .cerebtechlogo
 	position: absolute;
 	margin-top: 28px;
 	margin-left: 20px;
-
+	text-shadow: 0 25px rgba(60,184,133,0.20);
 
 }
 
@@ -569,7 +571,7 @@ visibility: hidden;
 	line-height: 43px;
 
 
-
+text-shadow:0px 20px 1px rgba(60,184,133,0.20);
 
 
 
@@ -596,7 +598,7 @@ visibility: hidden;
 	letter-spacing: 0.61px;
 	line-height: 43px;
 
-
+text-shadow:0px 20px 1px rgba(60,184,133,0.20)
 
 
 
@@ -741,7 +743,7 @@ h4
 letter-spacing:-0.61px;
 line-height:43px;
 */
-
+text-shadow:0px 20px 1px rgba(60,184,133,0.20);
 /*text-align:left;*/
 }
 
@@ -1043,7 +1045,7 @@ color: white;
 letter-spacing:0.35px;
 line-height:37px;
 */
-
+text-shadow:0px 14px 1px rgba(60,184,133,0.20);
 /*
 text-align:center;
 
@@ -1068,7 +1070,7 @@ color:#ffffff;
 /*
 letter-spacing:-0.35px;
 line-height:37px;
-
+text-shadow:0px 14px 1px rgba(60,184,133,0.20);
 text-align:left;
 */
 }
@@ -1173,33 +1175,6 @@ img.client_effect:hover{
 	opacity: 1;
 }
 
-
-
-.emen_section {
-    background: url('/images/employee_engagement.png') no-repeat center;
-    background-size: contain;
-
-}
-
-.byom_section {
-    background: url('/images/loan_manage.png') no-repeat center;
-    background-size: contain;
-    padding-top: 150px !important;
-}
-
-
-.bank_section {
-    background: url('/images/retail_bank.png') no-repeat center;
-    background-size: contain;
-    padding-top: 150px !important;
-}
-
-.dao_section {
-    background: url('/images/dao_bg.png') no-repeat center;
-    background-size: contain;
-    padding-top: 150px !important;
-
-}
 @media only screen and (max-width: 680px) {
 	.side-nav {
 	  position: fixed;
