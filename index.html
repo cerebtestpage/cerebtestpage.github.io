@@ -310,7 +310,7 @@
 
               <div class="row">
                 <div class="col s12 l2 m2 hide-on-med-and-down"><br/></div>
-                <div class="col s12 l3 m6">
+                <div class="col s12 l4 m6">
                   <b style="color:white;font-size:35px;font-weight:400px;">clients</b>
                   <hr align="left" style="border:2px solid #cbff00; width:15%;"/>
                   <br/>
@@ -334,21 +334,21 @@
                   </div>
                 </div>
 
-              <div class="col s12 l3 m6">
+              <div class="col s12 l4 m6">
                   <b class="white-text" style="font-size:35px;font-weight:400px;">partners</b>
                   <hr align="left" style="border:2px solid #cbff00; width:15%;"/>
                   <br/>
-                  <div>
+                <div>
                   <img class="client_effect" src="images/partner_logo/partner_1.png" width="220px;" style="padding-right:62px;">
                   <br class="hide-on-med-and-up"/>
                   <br class="hide-on-med-and-up"/>
                   <img class="client_effect" src="images/partner_logo/partner_2.png" width="180px;">
                 </div>
                 <div style="padding-top:40px;">
-                  <img class="client_effect" style="padding-right:62px;" src="images/partner_logo/partner_3.png" width="180px">
+                  <img class="client_effect" style="padding-right:82px;" src="images/partner_logo/partner_3.png" width="180px">
                   <br class="hide-on-med-and-up"/>
                   <br class="hide-on-med-and-up"/>
-                  <img class="client_effect"  src="images/partner_logo/partner_4.png" width="180px">
+                  <img class="client_effect"  src="images/partner_logo/partner_4.png" width="160px">
                 </div>
                 <div style="padding-top:40px;">
                   <img class="client_effect" src="images/partner_logo/partner_5.png" width="160px" style="padding-right:62px;">
@@ -396,7 +396,7 @@
                   <br/>
                   <img src="images/img-contact-1.png" width="70px">
                   <div style="font-family:Poppins;font-size:12px;color:#d0ff20;letter-spacing:1.33px;line-height:27px;text-align:left;">KOCHI</div><br/>
-                  <div style="opacity:0.8;font-family:Poppins;font-size:11px;color:#ffffff;letter-spacing:0.5px;">Chittilappilly,Sastha <br>Temple Rd, <br> Ernakulam North,<br> Cochin – 682018</div>
+                  <div style="opacity:0.8;font-family:Poppins;font-size:11px;color:#ffffff;letter-spacing:0.5px;">Chittilappilly,<br>Sastha Temple Rd, <br> Ernakulam North,<br> Cochin – 682018</div>
                 </div>
                 <div class="col s12 l2 m8">
                   <br/>
@@ -406,7 +406,7 @@
                   <img src="images/img-contact-2.png" width="90px">
                   <br/>
                   <div style="font-family:Poppins;font-size:12px;color:#d0ff20;letter-spacing:1.33px;line-height:27px;text-align:left;">BENGALURU</div><br/>
-                  <div  style="opacity:0.8;font-family:Poppins;font-size:11px;color:#ffffff;letter-spacing:0.5px;">#15,Indradhanush,<br>Kothannur P.O Bangalore<br>560 077. IN.</div>
+                  <div  style="opacity:0.8;font-family:Poppins;font-size:11px;color:#ffffff;letter-spacing:0.5px;">#15,Indradhanush,<br>Kothannur P.O <br/>Bangalore<br>560 077. IN.</div>
                 </div>
 
                 <div class="col s12 l2 m8">
@@ -417,7 +417,7 @@
                   <img src="images/img-contact-3.png" width="30px">
                   <br/>
                   <div style="font-family:Poppins;font-size:12px;color:#d0ff20;letter-spacing:1.33px;line-height:27px;text-align:left;">FUJAIRAH</div><br/>
-                  <div  style="opacity:0.8;font-family:Poppins;font-size:11px;color:#ffffff;letter-spacing:0.5px;">Creative city <br/>Media free zone<br>Creative Tower,<br/>P.O.Box 4422, Fujairah,UAE</div>
+                  <div  style="opacity:0.8;font-family:Poppins;font-size:11px;color:#ffffff;letter-spacing:0.5px;">Creative city <br/>Media free zone<br>Creative Tower,<br/>P.O.Box 4422,<br/> Fujairah,UAE</div>
 
                 </div>
 
@@ -429,7 +429,7 @@
                   <img src="images/img-contact-4.png" width="20px">
                   <br/>
                   <div style="font-family:Poppins;font-size:12px;color:#d0ff20;letter-spacing:1.33px;line-height:27px;text-align:left;">NEW YORK</div><br/>
-                  <div style="opacity:0.8;font-family:Poppins;font-size:11px;color:#ffffff;letter-spacing:0.5px;">Suite# 310,<br>2nd street,<br>Brooklyn,<br> New York 11215,USA</div>
+                  <div style="opacity:0.8;font-family:Poppins;font-size:11px;color:#ffffff;letter-spacing:0.5px;">Suite# 310,<br>2nd street,<br>Brooklyn,<br> New York 11215,<br/>USA</div>
                 </div>
               </div>
             </div>
@@ -473,11 +473,21 @@
 
             <!--Import jQuery before materialize.js-->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script src="js/index.js"></script>
+            <script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+
             <script type="text/javascript" src="js/materialize.js"></script>
             <script type="text/javascript" src="js/swiper.js"></script>
             <script type="text/javascript" src="js/swiper.jquery.js"></script>
             <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-            <script src="js/index.js"></script>
+
+            <script>
+              $(document).ready(function() {
+
+                jQuery.scrollSpeed(100, 800);
+
+            });
+            </script>
             <script>
             //paste this code under the head tag or in a separate js file.
             // Wait for window load
