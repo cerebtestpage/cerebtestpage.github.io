@@ -313,6 +313,7 @@
                 <div class="col s12 l4 m6">
                   <b style="color:white;font-size:35px;font-weight:400px;">clients</b>
                   <hr align="left" style="border:2px solid #cbff00; width:15%;"/>
+                    <br class="hide-on-med-and-up"/>
                   <br/>
                   <div>
                     <img class="client_effect" src="images/Honeywell.png" style="padding-right:62px;" width="180px">
@@ -338,12 +339,14 @@
                     <br class="hide-on-med-and-up"/>
                     <img class="client_effect"  src="images/pkgb_logo.png" width="140px">
                   </div>
+                    <br class="hide-on-med-and-up"/>
                 </div>
 
               <div class="col s12 l4 m6">
                   <b class="white-text" style="font-size:35px;font-weight:400px;">partners</b>
                   <hr align="left" style="border:2px solid #cbff00; width:40px;"/>
                   <br/>
+                  <br class="hide-on-med-and-up"/>
                 <div>
                   <img class="client_effect" src="images/partner_logo/partner_1.png" width="220px;" style="padding-right:52px;">
                   <br class="hide-on-med-and-up"/>
@@ -351,16 +354,16 @@
                   <img class="client_effect" src="images/partner_logo/partner_2.png" width="180px;">
                 </div>
                 <div style="padding-top:40px;">
-                  <img class="client_effect" style="padding-right:82px;" src="images/partner_logo/partner_3.png" width="180px" height="20px">
+                  <img class="client_effect" style="padding-right:82px;" src="images/partner_logo/partner_3.png" width="220px">
                   <br class="hide-on-med-and-up"/>
                   <br class="hide-on-med-and-up"/>
                   <img class="client_effect"  src="images/partner_logo/partner_4.png" width="160px">
                 </div>
                 <div style="padding-top:40px;">
-                  <img class="client_effect" src="images/partner_logo/partner_5.png" width="160px" style="padding-right:62px;">
+                  <img class="client_effect" src="images/partner_logo/partner_5.png" width="130px" style="margin-right:90px;">
                   <br class="hide-on-med-and-up"/>
                   <br class="hide-on-med-and-up"/>
-                  <img class="client_effect" src="images/partner_logo/partner_6.png" width="120px" >
+                  <img class="client_effect" src="images/partner_logo/partner_6.png" width="150px">
                 </div>
                 <div style="padding-top:40px;">
                   <img class="client_effect" src="images/partner_logo/partner_7.png" width="100px">
@@ -377,6 +380,7 @@
               </div>
               <div class="row">
                 <div class="col s12 hide-on-small-only"><br/></div>
+                  
               </div>
 
             </section>
@@ -480,20 +484,14 @@
             <!--Import jQuery before materialize.js-->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
             <script src="js/index.js"></script>
-            <script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+            
 
             <script type="text/javascript" src="js/materialize.js"></script>
             <script type="text/javascript" src="js/swiper.js"></script>
             <script type="text/javascript" src="js/swiper.jquery.js"></script>
             <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
-            <script>
-              $(document).ready(function() {
-
-                jQuery.scrollSpeed(50, 400);
-
-            });
-            </script>
+            
             <script>
             //paste this code under the head tag or in a separate js file.
             // Wait for window load
@@ -533,7 +531,9 @@
               keyboardControl: true,
               nextButton: '.swiper-button-next',
               prevButton: '.swiper-button-prev',
-              effect:'fade'
+              effect:'fade',
+                 autoplay: 4000,
+        autoplayDisableOnInteraction: false
             });
             </script>
           </body>
