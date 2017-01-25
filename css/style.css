@@ -742,6 +742,22 @@ text-shadow:0px 20px 1px rgba(60,184,133,0.20)
 
 
 }
+#con_five
+{
+	background-image: url(../images/bg5.png);
+	background-size: cover;
+	width: 100%;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-width: 100%;
+	display: relative;
+	overflow: hidden;
+    height: auto;
+
+
+}
 
 h4
 {
