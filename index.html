@@ -35,7 +35,8 @@
         left: 0;
         top: 0;
         width: 130%;
-        height: 100vh;
+        height: 100%;
+        background-repeat: no-repeat;
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
@@ -179,7 +180,7 @@
                </div>
                </div>
 
-             <div class="swiper-slide" style="background-image:url(images/employee_app.jpg);">
+             <div class="swiper-slide">
 
                <div class="row" style="padding-top:150px; ">
                  <div class="col s12 l2 m2">
@@ -240,8 +241,8 @@
              <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                     <!-- Add Arrows-->
-                    <div class="swiper-button-next swiper-button-white"></div>
-                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <div class="swiper-button-next swiper-button-white hide-on-small-only"></div>
+                    <div class="swiper-button-prev swiper-button-white hide-on-small-only"></div>
              </div>
             </section>
 
@@ -540,13 +541,7 @@
             <script type="text/javascript" src="js/swiper.jquery.js"></script>
             <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
-            <script>
-              $(document).ready(function() {
 
-                jQuery.scrollSpeed(100, 800);
-
-            });
-            </script>
             <script>
             //paste this code under the head tag or in a separate js file.
             // Wait for window load
