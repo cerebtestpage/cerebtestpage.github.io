@@ -728,7 +728,7 @@ text-shadow:0px 20px 1px rgba(60,184,133,0.20)
 
 #five
 {
-			background-image: url(../images/bg5.png);
+	background-image: url(../images/bg5.png);
 	background-size: cover;
 	width: 100%;
 	top:0;
@@ -738,7 +738,7 @@ text-shadow:0px 20px 1px rgba(60,184,133,0.20)
 	max-width: 100%;
 	display: relative;
 	overflow: hidden;
-  height: auto;
+    height: auto;
 
 
 }
@@ -748,7 +748,7 @@ h4
 	color: white !important;
 	font-size: 35px !important;
 /*	position: absolute;*/
-	margin-top: 35% !important;
+	margin-top: 15% !important;
 /*	position: absolute;*/
 /*	margin-left: 20%;*/
 /*
