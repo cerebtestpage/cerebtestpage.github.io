@@ -4,7 +4,6 @@ body{
 }
 
 .side-nav{
-  width:247px;
   background-color: #2a2d33;
 }
 
@@ -49,6 +48,8 @@ body{
   text-align:left;
 }
 
-.content_space{
+section{
+  width:100%;
+  height: 100%;
   background-color: #f7f7f7;
 }
