@@ -746,13 +746,12 @@ text-shadow:0px 20px 1px rgba(60,184,133,0.20)
 }
 
 .for_med_display {
-    padding-left:17.5% !important;
-
+    margin-left:17% !important; 
 }
 
 @media only screen and (min-width:994px) {
     
-.for_med_display { padding-left:0px  !important;   }
+   .for_med_display {margin-left:20px  !important;   }
  
     
 }
